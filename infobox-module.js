@@ -834,5 +834,5 @@ InfoBox.prototype.close = function () {
 };
 
 
-return = InfoBox;
+return InfoBox;
 }
