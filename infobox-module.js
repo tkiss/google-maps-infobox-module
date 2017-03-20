@@ -74,6 +74,10 @@
  * @constructor
  * @param {InfoBoxOptions} [opt_opts]
  */
+
+module.exports = function ( googleMaps ) {
+	var google = googleMaps ? { maps : googleMaps } : window.google;
+
 function InfoBox(opt_opts) {
 
   opt_opts = opt_opts || {};
@@ -830,4 +834,5 @@ InfoBox.prototype.close = function () {
 };
 
 
-module.exports = InfoBox;
+return = InfoBox;
+}
